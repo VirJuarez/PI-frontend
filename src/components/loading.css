@@ -1,0 +1,21 @@
+.loading {
+    background-image: url("https://img.freepik.com/fotos-premium/verduras-e-ingredientes-alrededor-tabla-madera-vista-superior_147376-59.jpg");
+    background-size: 100% 100%;
+    opacity:0.5;
+    height: 720px;
+    width: 1520px;
+    margin:0;
+    border:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 50px;
+}

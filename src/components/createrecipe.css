@@ -1,0 +1,132 @@
+.header{
+    background-image: url(https://img.freepik.com/foto-gratis/vegetales-varios-sobre-mesa-negra-espacio-mensaje_1220-614.jpg?w=996&t=st=1668780555~exp=1668781155~hmac=2d63c7097515bd3d481f724ae3b6e4af02d281bcee8089bd25b0be41ca0edd99);
+    background-size: cover;
+    position:fixed;
+    width: 100%;
+    align-items: center;
+    top:0px;
+    color:beige;
+    text-shadow: -3px -3px 3px #a19961, 3px -3px 3px #3a1c1f, -3px 3px 3px #784f32, 3px 3px 3px #784f32;
+}
+
+.back{
+    position:fixed;
+    width: 200px;
+    right: 180px;
+    top: 18px
+}
+
+.btnback{
+    border-radius: 60%;
+    padding: 20px;
+    background-color: beige;
+}
+
+.btnback:hover{
+    background-color:darkgoldenrod;
+    transform: scale(1.1);
+}
+
+.form{
+    margin-top: 110px;
+}
+
+.form::after {
+    content: "";
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-madera-marron_53876-91618.jpg?w=996&t=st=1668782684~exp=1668783284~hmac=4e2ed7a29661f62e601416dede57bff9d28d329622395d2b2b0d118f298927d2);
+    background-size: 100% 100%;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;   
+  }
+
+.div{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputtext{
+    font-size: 25px;
+    font-weight: bold;
+   
+    
+}
+
+.input{
+    height: 25px;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 6px;
+    /* margin-left: 6px */
+}
+
+.inputgrande{
+    height: 80px;
+    width: 700px;
+    border-radius: 10px;
+    margin-top: 6px;
+}
+
+.inputgrandetext{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.errors{
+    width: 170px;
+    font-weight: bold;
+    color: rgb(122, 44, 44);
+    margin-bottom: 8px;
+    margin-top:8px
+
+}
+
+.diets{
+    display:flex;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 10px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-weight:500;
+
+}
+
+.dietinfo{
+    margin: 10px;
+    font-weight: 500;
+
+}
+
+
+.btncreate{
+    border-radius: 20px;
+    padding: 20px;
+    background-color: beige;
+    margin: 20px
+}
+
+.btncreate:hover{
+    background-color:darkgoldenrod;
+    transform: scale(1.1);
+}
+
+
+
+

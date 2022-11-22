@@ -1,0 +1,76 @@
+.h1{
+    color:beige;
+    text-shadow: -3px -3px 3px #a19961, 3px -3px 3px #3a1c1f, -3px 3px 3px #784f32, 3px 3px 3px #784f32;
+}
+.search{
+    margin:3px;
+    border-radius: 20px;
+    width:300px;
+    height: 30px;
+}
+
+.btnsearch{
+    margin:3px;
+    border-radius: 15px;
+    width:100px;
+    height: 36px;
+    background-color: beige;
+}
+.btnsearch:hover{
+    background-color:darkgoldenrod;
+    transform: scale(1.1);
+}
+
+.filter{
+    margin: 3px;
+    height: 25px;
+    width: 170px;
+    border-radius: 10px;
+    
+}
+
+.btnreset{
+    margin:3px;
+    border-radius: 10px;
+    width:100px;
+    height: 25px;
+    background-color: beige;
+}
+.btnreset:hover{
+    background-color:darkgoldenrod;
+    transform: scale(1.1);
+}
+
+.filters{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.create{
+    position:fixed;
+    width: 200px;
+    right: 180px;
+    top: 50px
+}
+
+.btncreate{
+    border-radius: 60%;
+    padding: 20px;
+    background-color: beige;
+}
+
+.btncreate:hover{
+    background-color:darkgoldenrod;
+    transform: scale(1.1);
+}
+
+.general{
+    background-image: url(https://img.freepik.com/foto-gratis/vegetales-varios-sobre-mesa-negra-espacio-mensaje_1220-614.jpg?w=996&t=st=1668780555~exp=1668781155~hmac=2d63c7097515bd3d481f724ae3b6e4af02d281bcee8089bd25b0be41ca0edd99);
+    background-size: cover;
+    position:fixed;
+    width: 100%;
+    align-items: center;
+    top:0px
+}

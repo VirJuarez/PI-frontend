@@ -1,0 +1,38 @@
+.landing {
+    background-image: url("https://img.freepik.com/fotos-premium/verduras-e-ingredientes-alrededor-tabla-madera-vista-superior_147376-59.jpg");
+    background-size: 100% 100%;
+    height: 720px;
+    width: 1520px;
+    margin:0;
+    border:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.welcome{
+    font-size: 60px;
+
+}
+
+.boton{
+    border-radius: 8px;
+    font-size: 30px;
+}
+
+.boton:hover{
+    background-color: black;
+    color: white;
+
+}
+/* https://img.freepik.com/foto-gratis/cosecha-macetas-verduras_23-2147694057.jpg?w=1060&t=st=1668698685~exp=1668699285~hmac=15de69b2f14c4e8630d88a24d66d6078c38da181b3aafd7003e93969695e7a42 */

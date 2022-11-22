@@ -1,0 +1,27 @@
+.recipes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+  }
+
+.recipes::after {
+    content: "";
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-madera-marron_53876-91618.jpg?w=996&t=st=1668782684~exp=1668783284~hmac=4e2ed7a29661f62e601416dede57bff9d28d329622395d2b2b0d118f298927d2);
+    background-size: 100% 100%;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;   
+  }
+
+  
+
+.paginadotop{
+  margin-top: 195px;
+}
+
