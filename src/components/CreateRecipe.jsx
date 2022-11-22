@@ -38,7 +38,7 @@ export default function CreateRecipe(){
     const submitHandler=(e)=>{
         e.preventDefault();
         if (validation()){
-            let rdo = dispatch(createRecipe(state));
+            dispatch(createRecipe(state));
             uncheck()
             setState({
                 name:"",

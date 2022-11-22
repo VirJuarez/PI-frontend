@@ -3,9 +3,7 @@ import "./home.css"
 import RecipeCard from "../components/RecipeCard"
 import * as actions from "../actions";
 import { useDispatch, useSelector } from "react-redux";
-import { connect } from "react-redux";
 import { useState, useEffect } from "react";
-import { render } from "react-dom";
 import { diets } from "./auxiliar";
 import Paginado from "../components/Paginado"
 import SearchBar from "./SearchBar";

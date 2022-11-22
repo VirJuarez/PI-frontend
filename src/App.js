@@ -1,5 +1,5 @@
 import './App.css';
-import {Route, Switch, BrowserRouter} from "react-router-dom"; //switch es para paginado? brouserrouter aca? o en index??
+import {Route} from "react-router-dom"; //switch es para paginado? brouserrouter aca? o en index??
 import React from "react";
 import LandingPage from './components/LandingPage';
 import Home from './components/Home';
