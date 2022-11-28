@@ -120,7 +120,7 @@ export default function CreateRecipe(){
                     <span className="errors">{errors.name}</span>
                     ):<span className="errors"></span>}
                 
-                    <label className="inputtext" htmlFor="dishtype">Type:  </label>
+                    <label className="inputtext" htmlFor="dishtype">Type *:  </label>
                     <input className="input"type="text" name="dishtype" value={state.dishtype} onChange={handleChange} onBlur={validateDishtype} onClick={validateName}></input>
                     {errors.dishtype?(
                     <span className="errors">{errors.dishtype}</span>
