@@ -32,6 +32,7 @@ export default function CreateRecipe(){
     const [errors, setErrors] = useState({
         name: "",
         summary: "",
+        dishtype: "",
         healthscore: "",
     })
 
@@ -49,9 +50,9 @@ export default function CreateRecipe(){
                 steps: "",
                 diets: []
             })
-            alert("Receta creada correctamente")
+            alert("Recipe created succesfully")
         }else{
-        alert ("name/summary required -- healthscore 0 to 100 -- at least 1 diet selected")}
+        alert ("name/dishtype/summary required -- healthscore 0 to 100 -- at least 1 diet selected")}
     }
     
     let uncheck = function() {
@@ -87,12 +88,15 @@ export default function CreateRecipe(){
 
     let validateSummary = ()=>{
         if(!state.summary){setErrors ({...errors,summary :"Summary is required"})}else{setErrors ({...errors,summary :""})}}
+
+    let validateDishtype = ()=>{
+        if(!state.dishtype){setErrors ({...errors,dishtype :"Dishtype is required"})}else{setErrors ({...errors,dishtype :""})}}
     
     let validateHS = ()=>{
         if(state.healthscore<0 || state.healthscore>100){setErrors ({...errors,healthscore : "Between 0 and 100"})}else{setErrors ({...errors,healthscore : ""})}}
     
     let validation = ()=>{
-        if (state.name && state.summary && parseInt(state.healthscore)<=100 && parseInt(state.healthscore)>=0 && state.diets.length>0){
+        if (state.name && state.summary && state.dishtype && parseInt(state.healthscore)<=100 && parseInt(state.healthscore)>=0 && state.diets.length>0){
         return true 
         }
         return false
@@ -117,12 +121,15 @@ export default function CreateRecipe(){
                     ):<span className="errors"></span>}
                 
                     <label className="inputtext" htmlFor="dishtype">Type:  </label>
-                    <input className="input"type="text" name="dishtype" value={state.dishtype} onChange={handleChange} onClick={validateName}></input>
-               
+                    <input className="input"type="text" name="dishtype" value={state.dishtype} onChange={handleChange} onBlur={validateDishtype} onClick={validateName}></input>
+                    {errors.dishtype?(
+                    <span className="errors">{errors.dishtype}</span>
+                    ):<span className="errors"></span>}
+
                 </div>
                 <div className="div">
                     <label className="inputtext"htmlFor="healthscore">Healthscore:  </label>
-                    <input className="input" type="text" name="healthscore" value={state.healthscore} onChange={handleChange} onBlur={validateHS}></input>
+                    <input className="input" type="text" name="healthscore" value={state.healthscore} onChange={handleChange} onBlur={validateHS} onClick={validateDishtype}></input>
                     {errors.healthscore ? (
                     <span className="errors">{errors.healthscore}</span>
                     ):<span className="errors"></span>}
