@@ -1,8 +1,10 @@
 .landing {
     background-image: url("https://img.freepik.com/fotos-premium/verduras-e-ingredientes-alrededor-tabla-madera-vista-superior_147376-59.jpg");
-    background-size: 100% 100%;
-    height: 720px;
-    width: 1520px;
+    background-size: cover;
+    min-height: 100vh;
+    position:static; 
+    width: 100%;
+    background-position: center;
     margin:0;
     border:0;
     padding: 0;
